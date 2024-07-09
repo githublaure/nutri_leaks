@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ajouter un Aliment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Ajouter un nouvel aliment</h2>
+    <form action="add_food.php" method="post">
+        <label for="name">Nom de l'aliment:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="benefit">Bienfait:</label><br>
+        <input type="text" id="benefit" name="benefit" required><br>
+        <input type="submit" value="Ajouter">
+    </form>
+    <a href="index.php">Retour au jeu</a> <!-- Correction du lien -->
+</body>
+</html>

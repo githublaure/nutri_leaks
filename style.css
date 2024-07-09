@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item, .benefit {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.benefit {
+    background-color: #add8e6;
+}
+
+.drag-enter {
+    background-color: #90ee90;
+}
+
+.drag-wrong {
+    background-color: #ffcccb;
+}
+
+.admin-options {
+    margin-top: 20px;
+}
+
+.admin-link {
+    margin: 0 10px;
+    text-decoration: underline;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.admin-link:hover {
+    color: #0056b3;
+}
+
+.game-controls {
+    margin-top: 20px;
+}
+
+.game-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items {
+        width: 80%; /* Utilisez une largeur relative pour s'adapter à la taille de l'écran */
+    }
+
+    .item, .benefit {
+        width: 100%; /* Les éléments s'étendent pour occuper toute la largeur du conteneur */
+    }
+}

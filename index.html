@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeu de Correspondance Aliment-Bienfait</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Associez chaque aliment à son bienfait</h2>
+    <div class="container">
+        <div id="foods" class="items">
+            <!-- Les aliments seront générés ici par JavaScript -->
+        </div>
+        <div id="benefits" class="items">
+            <!-- Les bienfaits seront générés ici par JavaScript -->
+        </div>
+    </div>
+    <div class="admin-options">
+        <?php if ($_SESSION['role'] == 'admin'): ?>
+            <a href="add_food.html">Ajouter un aliment</a>
+            <button id="show-delete-options">Supprimer un aliment</button>
+        <?php endif; ?>
+    </div>
+    <div id="score-board">
+        <!-- Le tableau des scores sera généré ici par JavaScript -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
